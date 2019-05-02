@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>finalPage2</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body class="bg-light">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h2>Checkout form</h2>
+      <p class="lead">Link to Original Page</p> <p>Link to Repo</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">-$5</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (USD)</span>
+            <strong>$20</strong>
+          </li>
+        </ul>
+
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              
+              <div class="invalid-feedback">
+                Please select a valid country.
+              </div>
+
+              <div id="country-box">
+                <ul class="country-letter">
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">A</option>
+              <option>Albania</option>
+              <option>Anguilla</option>
+              <option>Argentina</option>
+              <option>Australia</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">B</option>
+              <option>Bahamas</option>
+              <option>Belgium</option>
+              <option>Bolivia</option>
+              <option>Brazil</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">C</option>
+              <option>Canada</option>
+              <option>Chile</option>
+              <option>China</option>
+              <option>Costa Rica</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">D</option>
+              <option>Denmark</option>
+              <option>Dhekelia</option>
+              <option>Dominica</option>
+              <option>Dominican Republic</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">E</option>
+              <option>Ecuador</option>
+                    <option>Egypt</option>
+                    <option>Ethiopia</option>
+                    <option>El Salvador</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">F</option>
+              <option>Fiji</option>
+                    <option>Finland</option>
+                    <option>France</option>
+                    <option>French Polynesia</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">G</option>
+              <option>Germany</option>
+                    <option>Ghana</option>
+                    <option>Greece</option>
+                    <option>Greenland</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">H</option>
+              <option>Haiti</option>
+                    <option>Honduras</option>
+                    <option>Hong Kong</option>
+                    <option>Hungary</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">I</option>
+              <option>Iceland</option>
+                    <option>India</option>
+                    <option>Iran</option>
+                    <option>Ireland</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">J</option>
+              <option>Jamaica</option>
+                    <option>Japan</option>
+                    <option>Jersey</option>
+                    <option>Jordan</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">K</option>
+              <option>Kenya</option>
+                    <option>Kiribati</option>
+                    <option>Kuwait</option>
+                    <option>Kyrgyzstan</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">L</option>
+              <option>Laos</option>
+                    <option>Latvia</option>
+                    <option>Lebanon</option>
+                    <option>Liberia</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">M</option>
+              <option>Macedonia</option>
+                    <option>Madagascar</option>
+                    <option>Malaysia</option>
+                    <option>Mexico</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">N</option>
+              <option>Nepal</option>
+                    <option>Netherlands</option>
+                    <option>New Zealand</option>
+                    <option>Nicaragua</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">O</option>
+              <option>Oman</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">P</option>
+              <option>Pakistan</option>
+                    <option>Panama</option>
+                    <option>Paraguay</option>
+                    <option>Philippines</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Q</option>
+              <option>Qatar</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">R</option>
+              <option>Romania</option>
+                    <option>Russia</option>
+                    <option>Rwanda</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">S</option>
+              <option>Saint Lucia</option>
+                    <option>Sierra Leone</option>
+                    <option>Singapore</option>
+                    <option>Spain</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">T</option>
+              <option>Taiwan</option>
+                    <option>Tanzania</option>
+                    <option>Tonga</option>
+                    <option>Turkey</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">U</option>
+              <option>Uganda</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                    <option>Uruguay</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">V</option>
+              <option>Vanuatu</option>
+                    <option>Venezuela</option>
+                    <option>Vietnam</option>
+                    <option>Virgin Islands</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">W</option>
+              <option>Wake Island</option>
+                    <option>West Bank</option>
+                    <option>Western Sahara</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">X</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Y</option>
+              <option>Yemen</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Z</option>
+              <option>Zambia</option>
+                    <option>Zimbabwe</option>
+                    
+            </select></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              
+              <div class="invalid-feedback">
+                Please provide a valid state.
+              </div>
+              <div id="country-box">
+                <ul class="country-letter">
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">A</option>
+              <option>Alabama</option>
+                    <option>Alaska</option>
+                    <option>Arizona</option>
+                    <option>Arkansas</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">B</option>
+            
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">C</option>
+              <option>California</option>
+                    <option>Colorado</option>
+                    <option>Connecticut</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">D</option>
+              <option>Delaware</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">E</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">F</option>
+              <option>Florida</option>                  
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">G</option>
+              <option>Georgia</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">H</option>
+              <option>Hawaii</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">I</option>
+              <option>Idaho</option>
+                    <option>Illinois</option>
+                    <option>Indiana</option>
+                    <option>Iowa</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">J</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">K</option>
+              <option>Kansas</option>
+                    <option>Kentucky</option>                 
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">L</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">M</option>
+              <option>Maine</option>
+                    <option>Maryland</option>
+                    <option>Massachusett</option>
+                    <option>Michigan</option>
+                    <option>Minnesota</option>
+                    <option>Mississippi</option>
+                    <option>Missouri</option>
+                    <option>Montana</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">N</option>
+              <option>Nebraska</option>
+                    <option>Nevada</option>
+                    <option>New Hampshire</option>
+                    <option>New Jersey</option>
+                    <option>New Mexico</option>
+                    <option>New York</option>
+                    <option>North Carolina</option>
+                    <option>North Dakota</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">O</option>
+              <option>Ohio</option>
+                    <option>Oklahoma</option>
+                    <option>Oregon</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">P</option>
+              <option>Pennsylvania</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Q</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">R</option>
+              <option>Rhode Island</option>
+                    
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">S</option>
+              <option>South Carolina</option>
+                    <option>South Dakota</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">T</option>
+              <option>Tennessee</option>
+                    <option>Texas</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">U</option>
+              <option>Utah</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">V</option>
+              <option>Vermont</option>
+                    <option>Virginia</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">W</option>
+              <option>Washington</option>
+                    <option>West Virginia</option>
+                    <option>Wisconsin</option>
+                    <option>Wyoming</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">X</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Y</option>
+            </select></li>
+                  <li class="letter-box"><select class="custom-select d-block w-100" id="country" required>
+              <option value="">Z</option>
+            </select></li>
+                </ul>
+              </div>
+            </div>
+            </div>
+            
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          
+          
+          <hr class="mb-4">
+
+          
+          </div>
+          <div class="row">
+            
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+<div id="console-box"> 
+</div> 
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+      <p class="mb-1">&copy; 2017-2019 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')
+  </script>
+  <script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+  <script src="form-validation.js"></script>
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
